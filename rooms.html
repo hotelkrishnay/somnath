@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- SEO Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore luxurious Double Bed, Triple Bed, and Four Bed AC Rooms at Hotel Krishnay near Somnath Temple. Book now for a comfortable stay.">
+    <meta name="keywords" content="Hotel Krishnay rooms, Double Bed AC Room, Triple Bed AC Room, Four Bed AC Room, Somnath Temple hotel, Veraval accommodation">
+    <meta name="author" content="Hotel Krishnay">
+    <meta name="robots" content="index, follow">
+    <title>Rooms at Hotel Krishnay - Luxury Accommodation Near Somnath Temple</title>
+
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="Rooms at Hotel Krishnay - Luxury Accommodation">
+    <meta property="og:description" content="Discover Double Bed, Triple Bed, and Four Bed AC Rooms at Hotel Krishnay near Somnath Temple. Book now for exclusive offers.">
+    <meta property="og:image" content="https://www.hotelkrishnaysomnath.com/images/hotel-krishna-room.jpg">
+    <meta property="og:url" content="https://www.hotelkrishnaysomnath.com/rooms">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rooms at Hotel Krishnay - Luxury Accommodation">
+    <meta name="twitter:description" content="Explore luxurious rooms at Hotel Krishnay near Somnath Temple. Book now!">
+    <meta name="twitter:image" content="https://www.hotelkrishnaysomnath.com/images/hotel-krishna-room.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/fevicon.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { overflow-x: hidden; background-color: #f4f6f9; }
+        .navbar { background-color: #1a2a44; color: #fff; padding: 15px 20px; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+        .navbar .container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
+        .navbar .logo img { height: 70px; width: auto; object-fit: contain; }
+        .navbar .nav-links { display: flex; gap: 20px; }
+        .navbar .nav-links a { color: #fff; text-decoration: none; font-size: 1rem; transition: color 0.3s ease; }
+        .navbar .nav-links a:hover { color: #ffd700; }
+        .navbar .contact-btns { display: flex; gap: 10px; align-items: center; }
+        .navbar .contact-btns a { padding: 8px 15px; border-radius: 5px; text-decoration: none; font-size: 0.9rem; transition: background-color 0.3s ease; }
+        .navbar .call-btn { background-color: #28a745; color: #fff; }
+        .navbar .whatsapp-btn { background-color: #25d366; color: #fff; }
+        .navbar .call-btn:hover, .navbar .whatsapp-btn:hover { opacity: 0.9; }
+        .menu-toggle { display: none; font-size: 1.5rem; cursor: pointer; color: #fff; }
+
+        /* Floating Buttons for Mobile */
+        .floating-buttons { 
+            display: none; 
+            position: fixed; 
+            bottom: 20px; 
+            right: 20px; 
+            z-index: 1000; 
+            flex-direction: column; 
+            gap: 10px; 
+        }
+        .floating-buttons a { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            width: 50px; 
+            height: 50px; 
+            border-radius: 50%; 
+            text-decoration: none; 
+            color: #fff; 
+            font-size: 1.2rem; 
+            transition: transform 0.3s ease, opacity 0.3s ease; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+        }
+        .floating-buttons .call-btn { background-color: #28a745; }
+        .floating-buttons .whatsapp-btn { background-color: #25d366; }
+        .floating-buttons a:hover { transform: scale(1.1); opacity: 0.9; }
+
+        /* Rooms Section */
+        .rooms-section { padding: 100px 20px 60px; background-color: #f4f6f9; text-align: center; }
+        .rooms-section h1 { font-size: 2.5rem; color: #1a2a44; margin-bottom: 40px; position: relative; padding-bottom: 10px; }
+        .rooms-section h1::after { content: ''; width: 40px; height: 3px; background-color: #ffd700; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); }
+        .room-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 1200px; margin: 0 auto; }
+        .room-box { background-color: #fff; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 350px; overflow: hidden; position: relative; }
+        .room-slider { width: 100%; height: 230px; display: flex; transition: transform 0.5s ease; }
+        .room-slide { min-width: 100%; height: 100%; }
+        .room-slide img { width: 100%; height: 100%; object-fit: cover; }
+        .room-box h2 { font-size: 1.8rem; color: #1a2a44; margin: 15px 0; }
+        .room-box p { color: #333; padding: 0 15px; line-height: 1.6; }
+        .room-box .book-btn { display: inline-block; background-color: #ffd700; color: #1a2a44; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: 600; margin: 15px; transition: background-color 0.3s ease; }
+        .room-box .book-btn:hover { background-color: #e6c200; }
+
+        /* Room Facilities Section */
+        .facilities-section { padding: 60px 20px; background-color: #9e9a9a; text-align: center; }
+        .facilities-section h1 { font-size: 2.5rem; color: #1a2a44; margin-bottom: 40px; position: relative; padding-bottom: 10px; }
+        .facilities-section h1::after { content: ''; width: 40px; height: 3px; background-color: #ffd700; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); }
+        .facility-card { 
+            background-color: #c7eeee; 
+            border-radius: 15px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            display: flex; 
+            width: 100%; 
+            margin-bottom: 30px; 
+            padding: 20px; 
+            max-width: 1200px; 
+            margin-left: auto; 
+            margin-right: auto; 
+        }
+        .facility-card .image-container { 
+            width: 40%; 
+            height: 340px; 
+            overflow: hidden; 
+            border-radius: 8px; 
+        }
+        .facility-card .image-container img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+        }
+        .facility-card .content-container { 
+            width: 60%; 
+            padding: 20px; 
+            text-align: left; 
+        }
+        .facility-card h2 { font-size: 1.8rem; color: #1a2a44; margin-bottom: 15px; }
+        .facility-card ul { list-style-type: disc; padding-left: 20px; color: #333; line-height: 1.6; }
+        .facility-card ul li { margin-bottom: 10px; }
+
+        /* Popup Form */
+        .popup { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 2000; justify-content: center; align-items: center; }
+        .popup-content { background-color: #fff; padding: 20px; border-radius: 10px; width: 90%; max-width: 500px; position: relative; }
+        .popup-content h2 { font-size: 1.8rem; color: #1a2a44; margin-bottom: 20px; text-align: center; }
+        .popup-content form { display: flex; flex-direction: column; gap: 15px; }
+        .popup-content label { font-size: 1rem; color: #1a2a44; margin-bottom: 5px; text-align: left; }
+        .popup-content input, .popup-content select { padding: 10px; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem; }
+        .popup-content input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            color: #333;
+            background-color: #fff;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+        .popup-content input[type="date"]::-webkit-date-and-time-value {
+            text-align: left;
+            color: #333;
+        }
+        .popup-content input[type="date"]:invalid {
+            color: #999;
+        }
+        .popup-content button { background-color: #ffd700; color: #1a2a44; padding: 10px; border: none; border-radius: 5px; font-weight: 600; cursor: pointer; transition: background-color 0.3s ease; }
+        .popup-content button:hover { background-color: #e6c200; }
+        .close-btn { position: absolute; top: 10px; right: 15px; font-size: 1.5rem; cursor: pointer; color: #1a2a44; }
+
+        /* Responsive Design for Form */
+        @media (max-width: 768px) {
+            .popup-content {
+                width: 95%;
+                padding: 15px;
+            }
+            .popup-content h2 {
+                font-size: 1.5rem;
+            }
+            .popup-content input,
+            .popup-content select,
+            .popup-content button {
+                font-size: 0.9rem;
+                padding: 8px;
+            }
+            .popup-content label {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Footer */
+        .footer { background-color: #1a2a44; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 20px; }
+        .footer-part { flex: 1; min-width: 250px; text-align: left; }
+        .footer .footer-part.logo-address img { height: 50px; margin-bottom: 10px; }
+        .footer .footer-part.logo-address p { margin: 5px 0; font-size: 0.9rem; }
+        .footer .footer-part.contact-info h3 { font-size: 1.5rem; margin-bottom: 10px; }
+        .footer .footer-part.contact-info p { margin: 5px 0; }
+        .footer .footer-part.contact-info a { color: #00aaff; text-decoration: none; }
+        .footer .footer-part.contact-info a:hover { color: #ffd700; }
+        .footer .footer-part.map iframe { width: 100%; height: 200px; border: 0; border-radius: 10px; }
+        .footer .footer-part.links a { color: #fff; text-decoration: none; margin-right: 15px; display: inline-block; }
+        .footer .footer-part.links a:hover { color: #ffd700; }
+        .social-icons { display: flex; gap: 15px; margin-top: 10px; }
+        .social-icons a img { height: 30px; transition: opacity 0.3s ease; }
+        .social-icons a img:hover { opacity: 0.8; }
+
+        /* Animations */
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar .nav-links { 
+                display: none; 
+                flex-direction: column; 
+                position: absolute; 
+                top: 60px; 
+                left: 0; 
+                width: 100%; 
+                background-color: #1a2a44; 
+                padding: 20px; 
+                text-align: center; 
+            }
+            .navbar .nav-links.active { display: flex; }
+            .navbar .contact-btns { 
+                display: flex;
+                flex-direction: row; 
+                gap: 10px; 
+            }
+            .navbar .contact-btns.active { 
+                position: static;
+                padding: 10px 0; 
+            }
+            .menu-toggle { display: block; }
+            .floating-buttons { 
+                display: flex;
+            }
+            .rooms-section h1, .facilities-section h1 { font-size: 1.8rem; }
+            .room-box { width: 100%; }
+            .room-box h2 { font-size: 1.5rem; }
+            .facility-card { flex-direction: column; }
+            .facility-card .image-container { width: 100%; height: 200px; }
+            .facility-card .content-container { width: 100%; padding: 15px 0; }
+            .facility-card h2 { font-size: 1.5rem; }
+            .footer { flex-direction: column; text-align: center; }
+            .footer .footer-part { min-width: 100%; }
+            .footer .footer-part.map iframe { height: 150px; }
+            .footer .footer-part.links a { margin: 0 10px 10px 0; }
+            .navbar .logo img { height: 50px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Schema Markup for Rooms -->
+    <script type="application/ld+json" class="schema-hidden">
+    {
+  "@context": "https://schema.org",
+  "@type": "Hotel",
+  "name": "Hotel Krishnay",
+  "description": "Hotel Krishnay offers luxurious Double Bed, Triple Bed, and Four Bed AC Rooms near the iconic Somnath Temple in Veraval, Gujarat. Experience a comfortable and affordable stay with modern amenities, making us the best budget hotel in Somnath for families, couples, and groups.",
+  "url": "https://www.hotelkrishnaysomnath.com/rooms",
+  "telephone": "+919727133131",
+  "priceRange": "Rs. 1500 - Rs. 5000 (Approx)",
+  "image": [
+    "https://www.hotelkrishnaysomnath.com/images/hotel-krishna-room.jpg",
+    "https://www.hotelkrishnaysomnath.com/images/dwarka-hotel-booking-service.jpg",
+    "https://www.hotelkrishnaysomnath.com/images/Diu1.jpg",
+    "https://www.hotelkrishnaysomnath.com/images/somnath-jamnagar-taxi-service.jpg"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Somnath Bypass Corner, Near Hotel S Crown",
+    "addressLocality": "Somnath",
+    "addressRegion": "Gujarat",
+    "postalCode": "362268",
+    "addressCountry": "IN"
+  },
+  "starRating": {
+    "@type": "Rating",
+    "ratingValue": "4.5",
+    "bestRating": "5",
+    "ratingCount": "150"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "reviewCount": "150"
+  },
+  "hasMap": "https://www.google.com/maps/place/Hotel+Krishna/@20.906478,70.395724,15z/data=!4m8!3m7!1s0x0:0x5e5b6a7a7b7b7b7b!5m2!4m1!1i2!8m2!3d20.906478!4d70.395724",
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+919727133131",
+      "contactType": "reservations",
+      "email": "krishnahotelsomnath@gmail.com",
+      "areaServed": "IN",
+      "availableLanguage": "en-IN"
+    },
+    {
+      "@type": "ContactPoint",
+      "telephone": "+919727133131",
+      "contactType": "customer service",
+      "areaServed": "IN",
+      "availableLanguage": "en-IN"
+    }
+  ],
+  "checkInTime": "14:00",
+  "checkOutTime": "12:00",
+  "amenityFeature": [
+    "Air-conditioned rooms",
+    "High-speed Wi-Fi",
+    "24/7 hot and cold water",
+    "LED TV with cable channels",
+    "Room service",
+    "Daily housekeeping",
+    "Attached modern bathrooms"
+  ],
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "name": "Double Bed AC Room",
+      "description": "Perfect for couples or small families, our Double Bed AC Rooms offer unparalleled comfort and modern amenities for a relaxing stay at Hotel Krishnay, one of the best hotels in Somnath. Enjoy a clean and comfortable room, ideal for a budget-friendly double occupancy in Somnath, near the Somnath Temple. These couple-friendly double rooms provide an affordable and best double room experience near Somnath Temple.",
+      "category": "Double Room",
+      "priceCurrency": "INR",
+      "url": "https://www.hotelkrishnaysomnath.com/rooms#double-bed-room",
+      "image": [
+        "https://www.hotelkrishnaysomnath.com/images/dwarka-hotel-booking-service.jpg",
+        "https://www.hotelkrishnaysomnath.com/images/Diu1.jpg"
+      ],
+      "bed": "1 King Bed or 2 Single Beds",
+      "occupancy": {
+        "@type": "QuantitativeValue",
+        "value": "2"
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Triple Bed AC Room",
+      "description": "Ideal for small families or groups, our Triple Bed AC Rooms at Hotel Krishnay, a leading Somnath hotel, provide spacious comfort with top-notch facilities. These rooms are perfect for triple occupancy in Somnath, offering a spacious triple bed room near Somnath Temple with AC accommodation. Enjoy a budget-friendly triple bed room for your family stay in Somnath.",
+      "category": "Triple Room",
+      "priceCurrency": "INR",
+      "url": "https://www.hotelkrishnaysomnath.com/rooms#triple-bed-room",
+      "image": [
+        "https://www.hotelkrishnaysomnath.com/images/dwarka-hotel-booking-service.jpg",
+        "https://www.hotelkrishnaysomnath.com/images/Diu1.jpg"
+      ],
+      "bed": "3 Single Beds or 1 Double and 1 Single Bed",
+      "occupancy": {
+        "@type": "QuantitativeValue",
+        "value": "3"
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Four Bed AC Room",
+      "description": "Designed for larger groups or families, our Four Bed AC Rooms at Hotel Krishnay ensure a comfortable and memorable stay in Somnath. These large family rooms offer four occupancy, making them an excellent choice for a group stay in Somnath, especially as a budget-friendly four bed room near Somnath Temple with AC facilities.",
+      "category": "Quadruple Room",
+      "priceCurrency": "INR",
+      "url": "https://www.hotelkrishnaysomnath.com/rooms#four-bed-room",
+      "image": [
+        "https://www.hotelkrishnaysomnath.com/images/somnath-jamnagar-taxi-service.jpg",
+        "https://www.hotelkrishnaysomnath.com/images/somnath-porbandar-taxi-service.jpg"
+      ],
+      "bed": "4 Single Beds or 2 Double Beds",
+      "occupancy": {
+        "@type": "QuantitativeValue",
+        "value": "4"
+      }
+    }
+  ]
+}
+    </script>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><img src="images/logo.png" alt="Hotel Krishnay Logo" title="Hotel Krishnay"></div>
+            <div class="menu-toggle">☰</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="rooms.html">Rooms</a>
+                <a href="facilities.html">Facilities</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="contact-btns">
+                <a href="tel:+919727133131" class="call-btn">Call-919727133131</a>
+                <a href="https://wa.me/+917096508000" class="whatsapp-btn">WhatsApp</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Floating Buttons for Mobile -->
+    <div class="floating-buttons">
+        <a href="tel:+919727133131" class="call-btn">📞</a>
+        <a href="https://wa.me/+917096508000" class="whatsapp-btn">💬</a>
+    </div>
+
+    <!-- Rooms Section -->
+    <section class="rooms-section" id="rooms">
+        <h1>Our Luxurious Rooms</h1>
+        <div class="room-container">
+            <!-- Double Bed AC Room -->
+            <div class="room-box">
+                <div class="room-slider double-bed-slider">
+                    <div class="room-slide"><img src="images/Double/double-bed-room-somnath-hotel-krishna.png" alt="Double Bed AC Room 2"></div>
+                    <div class="room-slide"><img src="images/Double/double-bed-room-somnath-hotel-krishna-somnath.png" alt="Double Bed AC Room 3"></div>
+                    <div class="room-slide"><img src="images/Double/double-bed-room-somnath-hotel-krishna.png" alt="Double Bed AC Room 3"></div>
+                    <div class="room-slide"><img src="images/Double/hotel-krishna-somnath-rooms-with-flat television.png" alt="Double Bed AC Room 3"></div>
+                    <div class="room-slide"><img src="images/Double/hotel-krishna-somnath-bathroom-wash-basin.jpg" alt="Double Bed AC Room 3"></div>
+                    <div class="room-slide"><img src="images/Double/hotel-krishna-somnath-toilet-bathroom.jpg" alt="Double Bed AC Room 3"></div>
+                    <div class="room-slide"><img src="images/Double/hotel-krishna-somnath-washrom.jpg" alt="Double Bed AC Room 3"></div>
+                    <div class="room-slide"><img src="images/Double/hotel-krishna-somnath-westerntoilets.jpg" alt="Double Bed AC Room 3"></div>
+                </div>
+                <h2>Double Bed AC Room</h2>
+                <p>Perfect for couples or small family, Double Bed AC Rooms offer comfort, modern amenities for a relaxing stay.</p>
+                <a href="#" class="book-btn" data-room="Double Bed AC Room">Book Now</a>
+            </div>
+
+            <!-- Triple Bed AC Room -->
+            <div class="room-box">
+                <div class="room-slider triple-bed-slider">
+                    <div class="room-slide"><img src="images/Double/triple-bed-room-somnath-hotel-krishna-somnath-with -window.png" alt="Triple Bed AC Room 1"></div>
+                    <div class="room-slide"><img src="images/Double/triple-bed-room-somnath-hotel-krishna-somnath.png" alt="Triple Bed AC Room 2"></div>
+                    <div class="room-slide"><img src="images/Double/triple-bed-room-somnath-hotel-krishna.png" alt="Triple Bed AC Room 3"></div>
+                    <div class="room-slide"><img src="images/Double/hotel-krishna-somnath-triple-bed-rooms-with-flat television.png" alt="Triple Bed AC Room 3"></div>
+                    <div class="room-slide"><img src="images/Double/hotel-krishna-somnath-bathroom-wash-basin.jpg" alt="Double Bed AC Room 3"></div>
+                    <div class="room-slide"><img src="images/Double/hotel-krishna-somnath-toilet-bathroom.jpg" alt="Double Bed AC Room 3"></div>
+                    <div class="room-slide"><img src="images/Double/hotel-krishna-somnath-washrom.jpg" alt="Double Bed AC Room 3"></div>
+                    <div class="room-slide"><img src="images/Double/hotel-krishna-somnath-westerntoilets.jpg" alt="Double Bed AC Room 3"></div>
+                </div>
+                <h2>Triple Bed AC Room</h2>
+                <p>Ideal for small families or groups, our Triple Bed AC Rooms provide spacious comfort with top-notch facilities.</p>
+                <a href="#" class="book-btn" data-room="Triple Bed AC Room">Book Now</a>
+            </div>
+
+            <!-- Four Bed AC Room -->
+            <div class="room-box">
+                <div class="room-slider four-bed-slider">
+                    <div class="room-slide"><img src="images/Double/family-four-bed-room-somnath-hotel-krishna-somnath-temple .png" alt="Four Bed AC Room 1"></div>
+                    <div class="room-slide"><img src="images/Double/four-bed-room-somnath-hotel-krishna-somnath-temple.png" alt="Four Bed AC Room 2"></div>
+                    <div class="room-slide"><img src="images/Double/four-bed-room-somnath-hotel-krishna.png" alt="Four Bed AC Room 3"></div>
+                    <div class="room-slide"><img src="images/Double/hotel-krishna-somnath-rooms-with-flat television.png" alt="Double Bed AC Room 3"></div>
+                    <div class="room-slide"><img src="images/Double/hotel-krishna-somnath-bathroom-wash-basin.jpg" alt="Double Bed AC Room 3"></div>
+                    <div class="room-slide"><img src="images/Double/hotel-krishna-somnath-toilet-bathroom.jpg" alt="Double Bed AC Room 3"></div>
+                    <div class="room-slide"><img src="images/Double/hotel-krishna-somnath-washrom.jpg" alt="Double Bed AC Room 3"></div>
+                    <div class="room-slide"><img src="images/Double/hotel-krishna-somnath-westerntoilets.jpg" alt="Double Bed AC Room 3"></div>
+                </div>
+                <h2>Four Bed AC Room</h2>
+                <p>Designed for larger groups or families, our Four Bed AC Rooms ensure a comfortable and memorable stay.</p>
+                <a href="#" class="book-btn" data-room="Four Bed AC Room">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Facilities Section -->
+    <section class="facilities-section">
+        <h1>Room Facilities</h1>
+        <div class="facility-card">
+            <div class="image-container">
+                <img src="images/Double/double-bed-room-somnath-hotel-krishna.png" alt="Double Bed AC Room">
+            </div>
+            <div class="content-container">
+                <h2>Double Bed AC Room</h2>
+                <ul>
+                    <li>Air-conditioned room with a comfortable double bed</li>
+                    <li>High-speed Wi-Fi connectivity</li>
+                    <li>24/7 hot and cold water supply</li>
+                    <li>LED TV with cable channels</li>
+                    <li>Attached bathroom with modern fittings</li>
+                    <li>Room service for your convenience</li>
+                    <li>Daily housekeeping</li>
+                </ul>
+            </div>
+        </div>
+        <div class="facility-card">
+            <div class="image-container">
+                <img src="images/Double/triple-bed-room-somnath-hotel-krishna.png" alt="Triple Bed AC Room">
+            </div>
+            <div class="content-container">
+                <h2>Triple Bed AC Room</h2>
+                <ul>
+                    <li>Spacious air-conditioned room with three single beds or one double and one single bed</li>
+                    <li>High-speed Wi-Fi access</li>
+                    <li>24/7 hot and cold water</li>
+                    <li>LED TV with multiple channels</li>
+                    <li>Modern bathroom with premium amenities</li>
+                    <li>Room service available</li>
+                    <li>Daily cleaning and maintenance</li>
+                </ul>
+            </div>
+        </div>
+        <div class="facility-card">
+            <div class="image-container">
+                <img src="images/Double/four-bed-room-somnath-hotel-krishna.png" alt="Four Bed AC Room">
+            </div>
+            <div class="content-container">
+                <h2>Four Bed AC Room</h2>
+                <ul>
+                    <li>Large air-conditioned room with four single beds or two double beds</li>
+                    <li>Complimentary high-speed Wi-Fi</li>
+                    <li>24/7 hot and cold water supply</li>
+                    <li>LED TV with cable entertainment</li>
+                    <li>Spacious bathroom with modern fixtures</li>
+                    <li>Room service for added comfort</li>
+                    <li>Daily housekeeping services</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup Form -->
+    <div class="popup" id="bookingPopup">
+        <div class="popup-content">
+            <span class="close-btn">×</span>
+            <h2>Book Your Room</h2>
+            <form id="bookingForm">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Name" required>
+                <label for="mobile">Mobile Number</label>
+                <input type="tel" name="mobile" id="mobile" placeholder="Mobile Number" required>
+                <label for="checkin">Check-In Date</label>
+                <input type="date" name="checkin" id="checkin" required>
+                <label for="checkout">Check-Out Date</label>
+                <input type="date" name="checkout" id="checkout" required>
+                <label for="persons">Adults (Above 7 Years)</label>
+                <select name="persons" id="persons" required>
+                    <option value="" disabled selected>Persons</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5+">5+</option>
+                </select>
+                <input type="hidden" name="room" id="roomType">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-part logo-address">
+            <img src="images/logo.png" alt="Hotel Krishnay Logo">
+            <p><strong>Hotel Krishnay</strong></p>
+            <p>Somnath Bypass Corner</p>
+            <p>Near Hotel S Crown Somnath</p>
+            <p>Gujarat : 362268</p>
+            <p><strong>Mobile:</strong> +91-9727133131</p>
+            <p><strong>WhatsApp:</strong> +91-9727133131</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><img src="https://img.icons8.com/color/30/facebook-new.png" alt="Facebook"></a>
+                <a href="https://www.tripadvisor.com" target="_blank"><img src="images/TripAdvisor.png" alt="Tripadvisor"></a>
+                <a href="https://www.goibibo.com" target="_blank"><img src="images/og-goibibo.aba291ed.png" alt="Goibibo"></a>
+                <a href="https://www.makemytrip.com" target="_blank"><img src="images/makemytrip.png" alt="MakeMyTrip"></a>
+                <a href="https://www.justdial.com" target="_blank"><img src="images/Justdial_logo.png" alt="Justdial"></a>
+            </div>
+        </div>
+        <div class="footer-part contact-info">
+            <h3>Have a Question?</h3>
+            <p><strong>Reservation:</strong> <a href="tel:+919727133131">+91-9727133131</a></p>
+            <p><strong>Post Reservation Assistance:</strong> <a href="tel:+919727133131">+91-9727133131</a></p>
+            <p><strong>Reception:</strong> <a href="tel:+7096508000">+917096508000</a></p>
+            <p><a href="mailto:krishnahotelsomnath@gmail.com">krishnahotelsomnath@gmail.com</a></p>
+        </div>
+        <div class="footer-part map">
+            <h3>Google Map</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d477108.23893766693!2d69.79964478906248!3d20.89589400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bfd32f565e494c9%3A0x2de04d5b755fc574!2sSomnath%20Travels%20-%20Car%20Rental%20and%20Car%20Booking%20in%20Somnath!5e0!3m2!1sen!2sin!4v1752073169554!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="footer-part links">
+                <a href="sitemap.xml">Sitemap</a>
+                <a href="terms-and-conditions.html">Terms & Conditions</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="reservation-policy.html">Reservation Policy</a>
+                <a href="faqs.html">FAQs</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Slider, Popup, Form Submission, and Floating Buttons -->
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        const contactBtn = document.querySelector('.contact-btns');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            contactBtn.classList.toggle('active');
+        });
+
+        // Room Sliders
+        function initSlider(sliderClass) {
+            let slideIndex = 0;
+            const slides = document.querySelectorAll(`.${sliderClass} .room-slide`);
+            function showSlides() {
+                slideIndex++;
+                if (slideIndex >= slides.length) slideIndex = 0;
+                document.querySelector(`.${sliderClass}`).style.transform = `translateX(-${slideIndex * 100}%)`;
+                setTimeout(showSlides, 5000);
+            }
+            showSlides();
+        }
+
+        initSlider('double-bed-slider');
+        initSlider('triple-bed-slider');
+        initSlider('four-bed-slider');
+
+        // Date Input Validation
+        const checkinInput = document.getElementById('checkin');
+        const checkoutInput = document.getElementById('checkout');
+
+        checkinInput.addEventListener('change', () => {
+            const checkinDate = new Date(checkinInput.value);
+            const checkoutDate = new Date(checkoutInput.value);
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+
+            // Ensure check-in is not in the past
+            if (checkinDate < today) {
+                alert('Check-in date cannot be in the past.');
+                checkinInput.value = '';
+            }
+
+            // Ensure check-out is after check-in
+            if (checkoutDate && checkoutDate <= checkinDate) {
+                alert('Check-out date must be after check-in date.');
+                checkoutInput.value = '';
+            }
+        });
+
+        checkoutInput.addEventListener('change', () => {
+            const checkinDate = new Date(checkinInput.value);
+            const checkoutDate = new Date(checkoutInput.value);
+
+            // Ensure check-out is after check-in
+            if (checkinDate && checkoutDate <= checkinDate) {
+                alert('Check-out date must be after check-in date.');
+                checkoutInput.value = '';
+            }
+        });
+
+        // Popup Form Handling
+        const popup = document.getElementById('bookingPopup');
+        const bookBtns = document.querySelectorAll('.book-btn');
+        const closeBtn = document.querySelector('.close-btn');
+        const bookingForm = document.getElementById('bookingForm');
+        const roomTypeInput = document.getElementById('roomType');
+
+        bookBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                roomTypeInput.value = btn.dataset.room;
+                popup.style.display = 'flex';
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            popup.style.display = 'none';
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === popup) popup.style.display = 'none';
+        });
+
+        bookingForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const formData = new FormData(bookingForm);
+            const data = Object.fromEntries(formData);
+
+            // Redirect to WhatsApp
+            const whatsappMessage = `Booking Inquiry\nName: ${data.name}\nMobile: ${data.mobile}\nCheck-In: ${data.checkin}\nCheck-Out: ${data.checkout}\nPersons: ${data.persons}\nRoom: ${data.room}`;
+            const whatsappUrl = `https://wa.me/+917096508000?text=${encodeURIComponent(whatsappMessage)}`;
+            window.open(whatsappUrl, '_blank');
+
+            popup.style.display = 'none';
+            bookingForm.reset();
+        });
+
+        // Floating Buttons Visibility on Scroll
+        const floatingButtons = document.querySelector('.floating-buttons');
+        window.addEventListener('scroll', () => {
+            if (window.innerWidth <= 768) {
+                if (window.scrollY > 60) { // Show when navbar is out of view
+                    floatingButtons.style.display = 'flex';
+                } else {
+                    floatingButtons.style.display = 'none';
+                }
+            }
+        });
+    </script>
+    
+</body>
+</html>
