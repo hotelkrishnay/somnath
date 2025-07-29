@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- SEO Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read the Privacy Policy of Hotel Krishnay, a luxury hotel near Somnath Temple, detailing how we collect, use, and protect your personal information.">
+    <meta name="keywords" content="Hotel Krishnay, privacy policy, Somnath hotel, data protection, personal information, booking privacy">
+    <meta name="author" content="Hotel Krishnay">
+    <meta name="robots" content="index, follow">
+    <title>Privacy Policy - Hotel Krishnay</title>
+
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="Privacy Policy - Hotel Krishnay">
+    <meta property="og:description" content="Learn how Hotel Krishnay near Somnath Temple collects, uses, and protects your personal information in our Privacy Policy.">
+    <meta property="og:image" content="https://hotelkrishnay.com/images/hotel-krishna.jpg">
+    <meta property="og:url" content="https://hotelkrishnay.com/privacy-policy.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Privacy Policy - Hotel Krishnay">
+    <meta name="twitter:description" content="Understand Hotel Krishnay's Privacy Policy, covering data collection, usage, and protection for guests.">
+    <meta name="twitter:image" content="https://hotelkrishnay.com/images/hotel-krishna.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/fevicon.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { overflow-x: hidden; background-color: #f4f6f9; }
+        .navbar { background-color: #1a2a44; color: #fff; padding: 15px 20px; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+        .navbar .container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
+        .navbar .logo img { height: 70px; width: auto; object-fit: contain; }
+        .navbar .nav-links { display: flex; gap: 20px; }
+        .navbar .nav-links a { color: #fff; text-decoration: none; font-size: 1rem; transition: color 0.3s ease; }
+        .navbar .nav-links a:hover { color: #ffd700; }
+        .navbar .contact-btns { display: flex; gap: 10px; align-items: center; }
+        .navbar .contact-btns a { padding: 8px 15px; border-radius: 5px; text-decoration: none; font-size: 0.9rem; transition: background-color 0.3s ease; }
+        .navbar .call-btn { background-color: #28a745; color: #fff; }
+        .navbar .whatsapp-btn { background-color: #25d366; color: #fff; }
+        .navbar .call-btn:hover, .navbar .whatsapp-btn:hover { opacity: 0.9; }
+        .menu-toggle { display: none; font-size: 1.5rem; cursor: pointer; color: #fff; }
+
+        /* Floating Buttons for Mobile */
+        .floating-buttons { 
+            display: none; 
+            position: fixed; 
+            bottom: 20px; 
+            right: 20px; 
+            z-index: 1000; 
+            flex-direction: column; 
+            gap: 10px; 
+        }
+        .floating-buttons a { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            width: 50px; 
+            height: 50px; 
+            border-radius: 50%; 
+            text-decoration: none; 
+            color: #fff; 
+            font-size: 1.2rem; 
+            transition: transform 0.3s ease, opacity 0.3s ease; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+        }
+        .floating-buttons .call-btn { background-color: #28a745; }
+        .floating-buttons .whatsapp-btn { background-color: #25d366; }
+        .floating-buttons a:hover { transform: scale(1.1); opacity: 0.9; }
+
+        /* Privacy Section */
+        .privacy-section { padding: 100px 20px 60px; max-width: 1200px; margin: 0 auto; background-color: #fff; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-top: 20px; }
+        .privacy-section h1 { font-size: 2.5rem; color: #1a2a44; text-align: center; margin-bottom: 30px; position: relative; padding-bottom: 10px; }
+        .privacy-section h1::after { content: ''; width: 60px; height: 3px; background-color: #ffd700; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); }
+        .privacy-section h2 { font-size: 1.8rem; color: #1a2a44; margin: 30px 0 15px; }
+        .privacy-section p, .privacy-section li { color: #333; line-height: 1.6; font-size: 1rem; margin-bottom: 15px; }
+        .privacy-section ul { list-style-type: disc; padding-left: 30px; margin-bottom: 20px; }
+        .privacy-section li { margin-bottom: 10px; }
+        .privacy-section .contact-info { background-color: #f4f6f9; padding: 20px; border-radius: 10px; margin-top: 30px; }
+        .privacy-section .contact-info p { margin: 10px 0; }
+        .privacy-section .contact-info a { color: #ffd700; text-decoration: none; font-weight: 600; }
+        .privacy-section .contact-info a:hover { color: #e6c200; }
+
+        /* Footer */
+        .footer {
+            background-color: #1a2a44;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .footer .footer-part {
+            flex: 1;
+            min-width: 250px;
+            text-align: left;
+        }
+        .footer .footer-part.logo-address img {
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .footer .footer-part.logo-address p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .footer .footer-part.contact-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .footer .footer-part.contact-info p {
+            margin: 5px 0;
+        }
+        .footer .footer-part.contact-info a {
+            color: #00aaff;
+            text-decoration: none;
+        }
+        .footer .footer-part.contact-info a:hover {
+            color: #ffd700;
+        }
+        .footer .footer-part.map iframe {
+            width: 100%;
+            height: 200px;
+            border: 0;
+            border-radius: 10px;
+        }
+        .footer .footer-part.links a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 15px;
+            display: inline-block;
+        }
+        .footer .footer-part.links a:hover {
+            color: #ffd700;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar .nav-links { 
+                display: none; 
+                flex-direction: column; 
+                position: absolute; 
+                top: 60px; 
+                left: 0; 
+                width: 100%; 
+                background-color: #1a2a44; 
+                padding: 20px; 
+                text-align: center; 
+            }
+            .navbar .nav-links.active { display: flex; }
+            .navbar .contact-btns { 
+                display: flex;
+                flex-direction: row; 
+                gap: 10px; 
+            }
+            .navbar .contact-btns.active { 
+                position: static;
+                padding: 10px 0; 
+            }
+            .menu-toggle { display: block; }
+            .floating-buttons { 
+                display: flex;
+            }
+            .privacy-section { padding: 80px 15px 40px; }
+            .privacy-section h1 { font-size: 1.8rem; }
+            .privacy-section h2 { font-size: 1.4rem; }
+            .privacy-section p, .privacy-section li { font-size: 0.9rem; }
+            .footer {
+                flex-direction: column;
+                text-align: center;
+            }
+            .footer .footer-part {
+                min-width: 100%;
+            }
+            .footer .footer-part.map iframe {
+                height: 150px;
+            }
+            .footer .footer-part.links a {
+                margin: 0 10px 10px 0;
+            }
+            .footer .logo img { height: 40px; }
+        }
+
+        /* Schema Markup for SEO */
+        .schema-hidden { display: none; }
+    </style>
+</head>
+<body>
+    <!-- Schema Markup for Privacy Policy Page -->
+    <script type="application/ld+json" class="schema-hidden">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Privacy Policy - Hotel Krishnay",
+        "description": "Privacy Policy for Hotel Krishnay, detailing how we collect, use, and protect your personal information during bookings and website usage.",
+        "url": "https://hotelkrishnay.com/privacy-policy.html",
+        "publisher": {
+            "@type": "Hotel",
+            "name": "Hotel Krishnay",
+            "telephone": "+919727133131",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Somnath Bypass Corner, Near Hotel S Crown",
+                "addressLocality": "Somnath",
+                "addressRegion": "Gujarat",
+                "postalCode": "362268",
+                "addressCountry": "IN"
+            }
+        }
+    }
+    </script>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><img src="images/logo.png" alt="Hotel Krishnay Logo" title="Hotel Krishnay"></div>
+            <div class="menu-toggle">☰</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="rooms.html">Rooms</a>
+                <a href="facilities.html">Facilities</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="contact-btns">
+                <a href="tel:+919727133131" class="call-btn">Call-919727133131</a>
+                <a href="https://wa.me/+917096508000" class="whatsapp-btn">WhatsApp</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Floating Buttons for Mobile -->
+    <div class="floating-buttons">
+        <a href="tel:+919727133131" class="call-btn">📞</a>
+        <a href="https://wa.me/+917096508000" class="whatsapp-btn">💬</a>
+    </div>
+
+    <!-- Privacy Policy Section -->
+    <section class="privacy-section">
+        <h1>Privacy Policy</h1>
+        <p>At Hotel Krishnay, we are committed to protecting your privacy. This Privacy Policy outlines how we collect, use, disclose, and safeguard your personal information when you visit our website, make a booking, or interact with our services. By using our website or services, you consent to the practices described in this policy.</p>
+
+        <h2>1. Information We Collect</h2>
+        <p>We may collect the following types of information:</p>
+        <ul>
+            <li><strong>Personal Information</strong>: Name, email address, phone number, mailing address, government-issued ID (e.g., Aadhaar, Passport, or Driver’s License), and payment details provided during booking or check-in.</li>
+            <li><strong>Automatically Collected Information</strong>: IP address, browser type, device information, and website usage data (e.g., pages visited, time spent) to analyze trends and improve our services.</li>
+            <li><strong>Social Media Information</strong>: If you interact with us through social media platforms (e.g., WhatsApp, Facebook), we may receive information like your profile name or contact details, subject to the platform’s privacy settings.</li>
+            <li><strong>Correspondence</strong>: Emails, letters, or other communications you send to us.</li>
+        </ul>
+
+        <h2>2. How We Use Your Information</h2>
+        <p>Your information is used for the following purposes:</p>
+        <ul>
+            <li>To process and confirm bookings, manage check-in/check-out, and provide customer support.</li>
+            <li>To communicate with you about reservations, promotions, or updates (e.g., welcome emails, newsletters).</li>
+            <li>To improve our website and services through analytics and trend analysis.</li>
+            <li>To comply with legal obligations, such as verifying guest identity as per Government of India regulations.</li>
+            <li>To prevent fraud, investigate complaints, or address unlawful activities.</li>
+            <li>To send promotional offers or event information, with your consent where required.</li>
+        </ul>
+
+        <h2>3. How We Share Your Information</h2>
+        <ul>
+            <li><strong>Service Providers</strong>: We may share your information with trusted third parties (e.g., payment processors, booking platforms) to facilitate services. These providers are contractually obligated to protect your data.</li>
+            <li><strong>Legal Compliance</strong>: We may disclose information to comply with legal processes, court orders, or regulations, or to protect the safety of guests, staff, or property.</li>
+            <li><strong>Business Transfers</strong>: In the event of a merger, acquisition, or sale, your information may be transferred to the new entity, with prior notification.</li>
+            <li><strong>Marketing Partners</strong>: With your consent, we may share limited information with partners for promotional purposes. You can opt out of such communications.</li>
+        </ul>
+        <p>We do not sell or rent your personal information to third parties for marketing purposes without your explicit consent.</p>
+
+        <h2>4. Data Security</h2>
+        <p>We implement reasonable security measures to protect your personal information from unauthorized access, disclosure, or loss. However, no system is completely secure, and we cannot guarantee absolute security.</p>
+
+        <h2>5. Your Rights</h2>
+        <p>You have the following rights regarding your personal information:</p>
+        <ul>
+            <li><strong>Right to Access</strong>: Request access to the personal information we hold about you.</li>
+            <li><strong>Right to Correction</strong>: Request corrections to inaccurate or incomplete data.</li>
+            <li><strong>Right to Opt-Out</strong>: Opt out of marketing communications by contacting us or using the unsubscribe link in emails.</li>
+            <li><strong>Right to Deletion</strong>: Request deletion of your data, subject to legal retention requirements (e.g., for tax or compliance purposes).</li>
+        </ul>
+        <p>To exercise these rights, contact us using the details below. We may charge a reasonable fee to cover administrative costs for certain requests.</p>
+
+        <h2>6. Third-Party Links</h2>
+        <p>Our website may contain links to third-party websites (e.g., booking platforms, social media). We are not responsible for the privacy practices of these sites. Please review their privacy policies before sharing information.</p>
+
+        <h2>7. Cookies and Tracking</h2>
+        <p>We use cookies and similar technologies to enhance your browsing experience and analyze website usage. You can manage cookie preferences through your browser settings.</p>
+
+        <h2>8. Children’s Privacy</h2>
+        <p>Our services are not intended for individuals under 18. We do not knowingly collect personal information from children. If you believe we have collected such data, please contact us to have it removed.</p>
+
+        <h2>9. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy to reflect changes in our practices or legal requirements. Updates will be posted on this page, and we will notify you of significant changes via email or website notices.</p>
+
+        <h2>10. Governing Law</h2>
+        <p>This Privacy Policy is governed by the laws of India. Any disputes arising under this policy shall be subject to the exclusive jurisdiction of the courts of Gujarat, India.</p>
+
+        <h2>11. Contact Us</h2>
+        <div class="contact-info">
+            <p>For questions or concerns about this Privacy Policy or your data, please contact us:</p>
+            <p><strong>Phone:</strong> <a href="tel:+919727133131">+91-9727133131</a></p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/+917096508000">+917096508000</a></p>
+            <p><strong>Email:</strong> <a href="mailto:krishnahotelsomnath@gmail.com">krishnahotelsomnath@gmail.com</a></p>
+            <p><strong>Address:</strong> Hotel Krishnay, Somnath Bypass Corner, Near Hotel S Crown, Somnath, Gujarat 362268, India</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-part logo-address">
+            <img src="images/logo.png" alt="Hotel Krishnay Logo">
+            <p><strong>Hotel Krishnay</strong></p>
+            <p>Somnath Bypass Corner</p>
+            <p>Near Hotel S Crown Somnath</p>
+            <p>Gujarat : 362268</p>
+            <p><strong>Mobile:</strong> +91-9727133131</p>
+            <p><strong>WhatsApp:</strong> +917096508000</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><img src="https://img.icons8.com/color/30/facebook-new.png" alt="Facebook"></a>
+                <a href="https://www.tripadvisor.com" target="_blank"><img src="images/TripAdvisor.png" alt="Tripadvisor"></a>
+                <a href="https://www.goibibo.com" target="_blank"><img src="images/og-goibibo.aba291ed.png" alt="Goibibo"></a>
+                <a href="https://www.makemytrip.com" target="_blank"><img src="images/makemytrip.png" alt="MakeMyTrip"></a>
+                <a href="https://www.justdial.com" target="_blank"><img src="images/Justdial_logo.png" alt="Justdial"></a>
+            </div>
+        </div>
+        <div class="footer-part contact-info">
+            <h3>Have a Question?</h3>
+            <p><strong>Reservation:</strong> <a href="tel:+919727133131">+91-9727133131</a></p>
+            <p><strong>Post Reservation Assistance:</strong> <a href="tel:+919727133131">+91-9727133131</a></p>
+            <p><strong>Reception:</strong> <a href="tel:+7096508000">+917096508000</a></p>
+            <p><a href="mailto:krishnahotelsomnath@gmail.com">krishnahotelsomnath@gmail.com</a></p>
+        </div>
+        <div class="footer-part map">
+            <h3>Google Map</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d477108.23893766693!2d69.79964478906248!3d20.89589400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bfd32f565e494c9%3A0x2de04d5b755fc574!2sSomnath%20Travels%20-%20Car%20Rental%20and%20Car%20Booking%20in%20Somnath!5e0!3m2!1sen!2sin!4v1752073169554!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="footer-part links">
+                <a href="sitemap.xml">Sitemap</a>
+                <a href="terms-and-conditions.html">Terms & Conditions</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="reservation-policy.html">Reservation Policy</a>
+                <a href="faqs.html">FAQs</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu and Floating Buttons -->
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        const contactBtn = document.querySelector('.contact-btns');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            contactBtn.classList.toggle('active');
+        });
+
+        // Floating Buttons Visibility on Scroll
+        const floatingButtons = document.querySelector('.floating-buttons');
+        window.addEventListener('scroll', () => {
+            if (window.innerWidth <= 768) {
+                if (window.scrollY > 60) {
+                    floatingButtons.style.display = 'flex';
+                } else {
+                    floatingButtons.style.display = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
