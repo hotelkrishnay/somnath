@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://hotelkrishnay.com/index.html</loc>
+        <loc>https://hotelkrishnay.com</loc>
         <lastmod>2025-07-10</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
@@ -51,6 +51,13 @@
 
     <url>
         <loc>https://hotelkrishnay.com/reservation-policy.html</loc>
+        <lastmod>2025-07-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://hotelkrishnay.com/faqs.html</loc>
         <lastmod>2025-07-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
