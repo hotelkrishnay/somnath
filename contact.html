@@ -553,7 +553,7 @@
             </div>
             <div class="contact-btns">
                 <a href="tel:+919727133131" class="call-btn">Call-919727133131</a>
-                <a href="https://wa.me/+917096508000" class="whatsapp-btn">WhatsApp</a>
+                <a href="https://wa.me/+917878814320" class="whatsapp-btn">WhatsApp</a>
             </div>
         </div>
     </nav>
@@ -561,7 +561,7 @@
     <!-- Floating Buttons for Mobile -->
     <div class="floating-buttons">
         <a href="tel:+919727133131" class="call-btn">📞</a>
-        <a href="https://wa.me/+917096508000" class="whatsapp-btn">💬</a>
+        <a href="https://wa.me/+917878814320" class="whatsapp-btn">💬</a>
     </div>
 
     <!-- Contact Section -->
@@ -577,7 +577,7 @@
                     </li>
                     <li>
                         <img src="https://img.icons8.com/ios-filled/24/whatsapp.png" alt="WhatsApp">
-                        <a href="https://wa.me/+917096508000">+91-9727133131</a>
+                        <a href="https://wa.me/+917878814320">+91-9727133131</a>
                     </li>
                     <li>
                         <img src="https://img.icons8.com/ios-filled/24/email.png" alt="Email">
@@ -610,9 +610,8 @@
                 <input type="tel" name="mobile" placeholder="Mobile Number" pattern="[0-9]{10}" required>
                 <input type="date" name="checkin" required>
                 <input type="date" name="checkout" required>
-                <input type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{10}" required>
                 <select name="adults" required>
-                    <option value="" disabled selected>Number of Adults</option>
+                    <option value="" disabled selected>Number of Persons above 5 Years</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -620,7 +619,7 @@
                     <option value="5+">5+</option>
                 </select>
                 <select name="kids" required>
-                    <option value="" disabled selected>Number of Kids</option>
+                    <option value="" disabled selected>Number of Kids below 5 Years</option>
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -641,7 +640,7 @@
             <p>Near Hotel S Crown Somnath</p>
             <p>Gujarat : 362268</p>
             <p><strong>Mobile:</strong> <a href="tel:+919727133131">+91-9727133131</a></p>
-            <p><strong>WhatsApp:</strong> <a href="https://wa.me/+917096508000">+91-7096508000</a></p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/+917878814320">+91-7878814320</a></p>
             <div class="social-icons">
                 <a href="https://www.facebook.com" target="_blank"><img src="https://img.icons8.com/color/30/facebook-new.png" alt="Facebook"></a>
                 <a href="https://www.tripadvisor.com" target="_blank"><img src="images/TripAdvisor.png" alt="Tripadvisor"></a>
@@ -654,7 +653,7 @@
             <h3>Have a Question?</h3>
             <p><strong>Reservation:</strong> <a href="tel:+919727133131">+91-9727133131</a></p>
             <p><strong>Post Reservation Assistance:</strong> <a href="tel:+919727133131">+91-9727133131</a></p>
-            <p><strong>Reception:</strong> <a href="tel:+7096508000">+917096508000</a></p>
+            <p><strong>Reception:</strong> <a href="tel:+7096508000">+917878814320</a></p>
             <p><a href="mailto:krishnahotelsomnath@gmail.com">krishnahotelsomnath@gmail.com</a></p>
         </div>
         <div class="footer-part map">
@@ -695,9 +694,9 @@
             e.preventDefault();
             const form = e.target;
             const formData = new FormData(form);
-            const message = `Booking Inquiry:\nName: ${formData.get('name')}\nMobile: ${formData.get('mobile')}\nCheck-in: ${formData.get('checkin')}\nCheck-out: ${formData.get('checkout')}\nPhone: ${formData.get('phone')}\nAdults: ${formData.get('adults')}\nKids: ${formData.get('kids')}`;
+            const message = `Booking Inquiry:\nName: ${formData.get('name')}\nMobile: ${formData.get('mobile')}\nCheck-in: ${formData.get('checkin')}\nCheck-out: ${formData.get('checkout')}\nAdults: ${formData.get('adults')}\nKids: ${formData.get('kids')}`;
             const encodedMessage = encodeURIComponent(message);
-            const whatsappUrl = `https://wa.me/+917096508000?text=${encodedMessage}`;
+            const whatsappUrl = `https://wa.me/+917878814320?text=${encodedMessage}`;
             window.open(whatsappUrl, '_blank');
             form.reset();
         });
